@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Cazador de Cuadrados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>¡Caza el cuadrado!</h1>
+        
+        <div id="gameArea" style="display:none;"></div>
+        <div id="score" style="display:none;">Puntaje: 0</div>
+        <div id="timer" style="display:none;">Tiempo restante: 30s</div>
+        
+        <div id="nameInputContainer" style="display:none;">
+            <label for="playerName">Introduce tu nombre para guardar el puntaje:</label>
+            <input type="text" id="playerName" placeholder="Tu nombre">
+            <button id="submitNameButton" class="btn">Guardar Puntaje</button>
+        </div>
+
+        <button id="startButton" class="btn">Comenzar</button>
+        <button id="restartButton" class="btn" style="display:none;">Reiniciar</button>
+        
+        <div id="results">
+            <h2>Resultados:</h2>
+            <ul id="scoreList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
